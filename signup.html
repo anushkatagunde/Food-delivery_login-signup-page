@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delilvery food signup page</title>
+    <style>
+          * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+    }
+
+    .container {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      display: flex;
+      background-color: white;
+      border-radius: 20px;
+      overflow: hidden;
+      width: 60%;
+      padding: 2% 1%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .left {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .left h1 {
+      text-align: center;
+      font-size: 35px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .left p {
+      text-align: center;
+      font-size: 12px;
+      color: gray;
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+
+    .input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      background-color: #fafafa;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #2e2c2c;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .divider::before {
+      margin-right: .75em;
+    }
+
+    .divider::after {
+      margin-left: .75em;
+    }
+
+    .social-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      background-color: white;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+
+     .social-btn a {
+      text-decoration: none;
+    }
+    
+    .social-btn:hover {
+        background-color: rgba(240, 239, 239, 0.89);
+    }
+
+    .social-btn img {
+      height: 20px;
+    }
+
+    .register {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 20%;
+    }
+
+    .register span {
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .right {
+      flex: 1;
+      background-image: url('./taylor-kiser-EvoIiaIVRzU-unsplash.jpg');
+      background-size: cover;
+      background-position: center;
+      margin: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      width: 200px;
+      height: 700px;
+    }
+    
+
+    @media only screen and (max-width: 600px) {
+      .left h1 {
+      font-size: 29px;
+    }
+
+    .left p {
+     font-size: 12px;
+    }
+     .container {
+      height: 100%;
+      width: 100%;
+     }
+    
+     .card {
+      display: inline;
+      width: 85%;
+      margin: 20px 15px;
+     }
+
+     .right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 85%;
+      height: 270px;
+      margin-left: 8%;
+      margin-bottom: 6%;
+     }
+
+    }
+
+    @media (min-width: 601px) and (max-width: 768px) {
+
+      .container{
+       width: 100%; 
+       height: 100%;
+      }
+
+      .card {
+        display: inline;
+         width: 90%;
+         margin: 20px 20px;
+      }
+ 
+      .right {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 90%;
+       height: 500px;
+       margin-left: 5%;
+     }
+    }
+
+
+
+    </style>
+</head>
+<body>
+     <div class="container">
+    <div class="card">
+      <div class="left">
+        <h1>Create an account</h1>
+        <p>Sign up with your valid email and password.</p>
+        <input type="text" placeholder="Username" class="input" />
+        <input type="email" placeholder="Email" class="input" />
+        <input type="password" placeholder="Password" class="input" />
+        <input type="password" placeholder="Confirm Password" class="input" />
+        <button class="btn">Sign Up</button>
+
+        <div class="divider">or login with</div>
+
+        <button class="social-btn">
+          <img src="https://img.icons8.com/color/48/google-logo.png" alt="google-logo"/>
+          <a href="https://accounts.google.com/">Login with Google</a>
+        </button>
+
+        <button class="social-btn">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Logo">
+          <a href="https://facebook.com/">Login with Facebook</a>
+        </button>
+
+        <div class="register">
+          Already have an account?<span> <a href="./index.html">Login</a> </span>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+  </div>
+</body>
+</html>
